@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Memoria - Jujutsu Kaisen</title>
+  <link rel="stylesheet" href="juegostyle.css">
+</head>
+
+<div class="video-background">
+<body>
+  <video autoplay muted loop>
+    <source src="Backgroundvideongif/backgroundvid.mp4" type="video/mp4">
+  </video>
+</div>
+
+  <div class="game-container">
+    <h1>Juego de Memoria - Jujutsu Kaisen</h1>
+    <p id="timer">Tiempo restante: 60s</p>
+    <div id="gameBoard"></div>
+  </div>
+
+  <div id="gameOverModal" class="modal">
+    <button id="closeGameOver" class="close-button">&times;</button>
+    <h2>Game Over...</h2>
+    <img src="Backgroundvideongif/sukuna.gif" alt="Game Over Animation" class="lost-gif">
+    <div class="button-container">
+      <button id="restartGameOver">Reiniciar Juego</button>
+    </div>
+  </div>
+
+  <div id="winnerModal" class="modal">
+    <button id="closeWinner" class="close-button">&times;</button>
+    <h2>¡Has Ganado! ✅</h2>
+    <img src="Backgroundvideongif/Gojo.gif" alt="Win"   class="winner-gif>
+    <div class="button-container">
+      <button id="restartWinner">Reiniciar Juego</button>
+    </div>
+  </div>
+
+  <script src="juegoscript.js"></script>
+</body>
+</html>
